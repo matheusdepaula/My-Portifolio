@@ -1,10 +1,8 @@
-
-
 <template>
   <div class="main-wrapper">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Clarence Taylor</span>
+        <span class="d-block d-lg-none">Matheus de Paula</span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
         </span>
@@ -40,6 +38,7 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
+          <div class="subheading mb-0">Hi there, I`M</div>
           <h1 class="mb-0">Matheus
             <span class="text-primary">De Paula</span>
           </h1>
@@ -52,7 +51,7 @@
             Busco sempre me aperfeiçoar e posso, com certeza, dizer que tecnologia é minha paixão!
           </p>
           <div class="social-icons">
-            <a href="#">
+            <a href="https://www.linkedin.com/in/matheus-depaula/">
               <i class="fab fa-linkedin-in"></i>
             </a>
             <a href="#">
@@ -76,45 +75,34 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Senior Web Developer</h3>
-              <div class="subheading mb-3">Intelitec Solutions</div>
-              <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+              <h3 class="mb-0">Senior Mobile Developer</h3>
+              <div class="subheading mb-3">Stefanini Solutions</div>
+              <p>Atuação no desenvolvimento do novo aplicativo do Banco do Brasil, conhecido como Mobile 3.0.</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">March 2013 - Present</span>
+              <span class="text-primary">May 2018 - Present</span>
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Web Developer</h3>
-              <div class="subheading mb-3">Intelitec Solutions</div>
-              <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+              <h3 class="mb-0">iOS Developer</h3>
+              <div class="subheading mb-3">Cast Group</div>
+              <p>Atuação no projeto Ourocard.</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">December 2011 - March 2013</span>
+              <span class="text-primary">April 2017 - May 2018</span>
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Junior Web Designer</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+              <h3 class="mb-0">iOS Developer</h3>
+              <div class="subheading mb-3">Apple Academy</div>
+              <p>Brazilian Education Program for iOS Developers.</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">July 2010 - December 2011</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Web Design Intern</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2008 - June 2010</span>
+              <span class="text-primary">February 2016 - April 2017</span>
             </div>
           </div>
 
@@ -130,24 +118,13 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">University of Colorado Boulder</h3>
-              <div class="subheading mb-3">Bachelor of Science</div>
-              <div>Computer Science - Web Development Track</div>
+              <h3 class="mb-0">Catholic University of Brasilia</h3>
+              <div class="subheading mb-3">Bachelor of System information</div>
+              <div>Information Technology - Web Development Track</div>
               <p>GPA: 3.23</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">August 2006 - May 2010</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">James Buchanan High School</h3>
-              <div class="subheading mb-3">Technology Magnet Program</div>
-              <p>GPA: 3.56</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2002 - May 2006</span>
             </div>
           </div>
 
@@ -271,9 +248,63 @@
 export default {
   data () {
     return {
-      title: 'My portfolio'
+      title: 'My portfolio',
+      name: 'MATHEUS',
+      surname: 'DE PAULA',
+      address: 'QS 14 Conjunto 2B · Riacho Fundo I, Brasília/DF · (61) 98222-5211 ·',
+      email: 'matheusdepaula.bsb@gmail.com',
+      aboutMe: 'Apaixonado pela tecnologia',
+      experience: [
+        {
+          position: 'Senior Mobile Developer',
+          company: 'Stefanini Solutions',
+          description: 'Atuação no desenvolvimento do aplicativo BB 3.0.',
+          startDate: 'May 2018',
+          endDate: 'Atual'
+        },
+        {
+          position: 'iOS Developer',
+          company: 'Cast Group',
+          description: 'Atuação no projeto Ourocard.',
+          startDate: 'April 2017',
+          endDate: 'May 2018'
+        },
+        {
+          position: 'iOS Develope',
+          company: 'Apple Academy',
+          description: 'Brazilian Education Program for iOS Developers.',
+          startDate: 'February 2016',
+          endDate: 'April 2017'
+        }
+      ]
     }
-  }
+  },
+  mounted () {
+    const $ = this.jquery
+    this.$nextTick(() => {
+      // our custom jQuery code goes here
+      $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+          var target = $(this.hash)
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']')
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: (target.offset().top)
+            }, 1000, 'easeInOutExpo')
+            return false
+          }
+        }
+      })
+      // Closes responsive menu when a scroll trigger link is clicked
+      $('.js-scroll-trigger').click(function () {
+        $('.navbar-collapse').collapse('hide')
+      })
+      // Activate scrollspy to add active class to navbar items on scroll
+      $('body').scrollspy({
+        target: '#sideNav'
+      })
+    })
+  }  
 }
 </script>
 
