@@ -27,9 +27,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </nav>
@@ -159,42 +159,39 @@
           <h2 class="mb-5">Skills</h2>
 
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline dev-icons">
+          <ul class="list-inline list-icons">
             <li class="list-inline-item">
-              <i class="fab fa-html5"></i>
+              <i class="devicons devicons-html5"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-css3-alt"></i>
+              <i class="devicons devicons-css3"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-js-square"></i>
+              <i class="devicons devicons-javascript"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-angular"></i>
+              <i class="devicons devicons-jquery"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-react"></i>
+              <i class="devicons devicons-sass"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-node-js"></i>
+              <i class="devicons devicons-less"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-sass"></i>
+              <i class="devicons devicons-bootstrap"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-less"></i>
+              <i class="devicons devicons-wordpress"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-wordpress"></i>
+              <i class="devicons devicons-grunt"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-gulp"></i>
+              <i class="devicons devicons-gulp"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-grunt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-npm"></i>
+              <i class="devicons devicons-npm"></i>
             </li>
           </ul>
 
@@ -228,7 +225,7 @@
 
       <hr class="m-0">
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+      <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
           <h2 class="mb-5">Awards &amp; Certifications</h2>
           <ul class="fa-ul mb-0">
@@ -260,7 +257,7 @@
               Place - James Buchanan High School - Hackathon 2005</li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </div>
   </div>
 </template>
