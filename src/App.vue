@@ -4,7 +4,7 @@
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Matheus de Paula</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./assets/profile.jpg" alt="">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +42,8 @@
           <h1 class="mb-0">Matheus
             <span class="text-primary">De Paula</span>
           </h1>
-          <div class="subheading mb-5">QS 14 Conjunto 2B · Riacho Fundo I, Brasília/DF · (61) 98222-5211 ·
+          <div class="subheading mb-4">iOS - Android - React Native </div>
+          <div class="subheading mb-5">Brasília/DF · (61) 98222-5211 ·
             <a href="mailto:matheusdepaula.bsb@gmail.com">matheusdepaula.bsb@gmail.com</a>
           </div>
           <p class="lead mb-5">
@@ -50,20 +51,40 @@
             Possuo ampla experiência como desenvolvedor Mobile, utilizando principalmente as linguagens Objective-C e Swift para desenvolvimento nativo iOS, Kotlin e Java para desenvolvimento Android e JavaScript para desenvolvimento híbrido, em ambas plataformas. 
             Busco sempre me aperfeiçoar e posso, com certeza, dizer que tecnologia é minha paixão!
           </p>
-          <div class="social-icons">
-            <a href="https://www.linkedin.com/in/matheus-depaula/">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </div>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/matheus.psousadf">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/matheus-depaula/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/matheusdepaula">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
 
