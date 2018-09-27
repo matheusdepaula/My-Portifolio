@@ -38,19 +38,15 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <div class="subheading mb-0">Hi there, I`M</div>
-          <h1 class="mb-0">Matheus
-            <span class="text-primary">De Paula</span>
+          <div class="subheading mb-0">{{ welcome }}</div>
+          <h1 class="mb-0">{{ name }}
+            <span class="text-primary">{{ surname }}</span>
           </h1>
-          <div class="subheading mb-4">iOS - Android - React Native </div>
-          <div class="subheading mb-5">Brasília/DF · (61) 98222-5211 ·
-            <a href="mailto:matheusdepaula.bsb@gmail.com">matheusdepaula.bsb@gmail.com</a>
+          <div class="subheading mb-4"> {{ technologies }} </div>
+          <div class="subheading mb-5">{{ info }}
+            <a href="mailto:matheusdepaula.bsb@gmail.com">{{ email }}</a>
           </div>
-          <p class="lead mb-5">
-            Formado em Sistemas de Informação na Universidade Católica de Brasília e Pós graduando em Dispositivos Móveis pelo IESB (Instituto de Educação Superior de Brasília). 
-            Possuo ampla experiência como desenvolvedor Mobile, utilizando principalmente as linguagens Objective-C e Swift para desenvolvimento nativo iOS, Kotlin e Java para desenvolvimento Android e JavaScript para desenvolvimento híbrido, em ambas plataformas. 
-            Busco sempre me aperfeiçoar e posso, com certeza, dizer que tecnologia é minha paixão!
-          </p>
+          <p class="lead mb-5">{{ aboutMe }}</p>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
               <a href="https://www.facebook.com/matheus.psousadf">
@@ -94,41 +90,17 @@
         <div class="my-auto">
           <h2 class="mb-5">Experience</h2>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-item d-flex flex-column flex-md-row mb-5" v-for="job in experience" :key="job.description">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Senior Mobile Developer</h3>
-              <div class="subheading mb-3">Stefanini Solutions</div>
-              <p>Atuação no desenvolvimento do novo aplicativo do Banco do Brasil, conhecido como Mobile 3.0.</p>
+              <h3 class="mb-0">{{ job.position }}</h3>
+              <div class="subheading mb-3">{{ job.company }}</div>
+              <p>{{ job.description }}</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">May 2018 - Present</span>
+              <span class="text-primary">{{ job.startDate }} - {{ job.endDate }}</span>
             </div>
           </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">iOS Developer</h3>
-              <div class="subheading mb-3">Cast Group</div>
-              <p>Atuação no projeto Ourocard.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">April 2017 - May 2018</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">iOS Developer</h3>
-              <div class="subheading mb-3">Apple Academy</div>
-              <p>Brazilian Education Program for iOS Developers.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">February 2016 - April 2017</span>
-            </div>
-          </div>
-
         </div>
-
       </section>
 
       <hr class="m-0">
@@ -137,15 +109,15 @@
         <div class="my-auto">
           <h2 class="mb-5">Education</h2>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-item d-flex flex-column flex-md-row mb-5" v-for="educationInfo in education" :key="educationInfo.description">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Catholic University of Brasilia</h3>
-              <div class="subheading mb-3">Bachelor of System information</div>
-              <div>Information Technology - Web Development Track</div>
-              <p>GPA: 3.23</p>
+              <h3 class="mb-0">{{ educationInfo.institute }}</h3>
+              <div class="subheading mb-3">{{ educationInfo.degree }}</div>
+              <div>{{ educationInfo.knowledge }}</div>
+              <p>{{ educationInfo.aditionalInfo }}</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">August 2006 - May 2010</span>
+              <span class="text-primary">{{ educationInfo.startDate }} - {{ educationInfo.endDate }}</span>
             </div>
           </div>
 
@@ -196,19 +168,10 @@
           </ul>
 
           <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
+          <ul class="fa-ul mb-0" v-for="item in workflow" :key="item.description">
             <li>
               <i class="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
+              {{ item.technology }}</li>
           </ul>
         </div>
       </section>
@@ -267,11 +230,13 @@ export default {
   data () {
     return {
       title: 'My portfolio',
+      welcome: 'Hi there, I`M',
       name: 'MATHEUS',
       surname: 'DE PAULA',
-      address: 'QS 14 Conjunto 2B · Riacho Fundo I, Brasília/DF · (61) 98222-5211 ·',
+      technologies: 'iOS - Android - React Native',
+      info: 'Brasília/DF · (61) 98222-5211 ·',
       email: 'matheusdepaula.bsb@gmail.com',
-      aboutMe: 'Apaixonado pela tecnologia',
+      aboutMe: 'Formado em Sistemas de Informação na Universidade Católica de Brasília e Pós graduando em Dispositivos Móveis pelo IESB (Instituto de Educação Superior de Brasília). Possuo ampla experiência como desenvolvedor Mobile, utilizando principalmente as linguagens Objective-C e Swift para desenvolvimento nativo iOS, Kotlin e Java para desenvolvimento Android e JavaScript para desenvolvimento híbrido, em ambas plataformas. Busco sempre me aperfeiçoar e posso, com certeza, dizer que tecnologia é minha paixão!',
       experience: [
         {
           position: 'Senior Mobile Developer',
@@ -288,11 +253,35 @@ export default {
           endDate: 'May 2018'
         },
         {
-          position: 'iOS Develope',
+          position: 'iOS Developer',
           company: 'Apple Academy',
           description: 'Brazilian Education Program for iOS Developers.',
           startDate: 'February 2016',
           endDate: 'April 2017'
+        }
+      ],
+      education: [
+        {
+          institute: 'CATHOLIC UNIVERSITY OF BRASILIA',
+          degree: 'BACHELOR OF SYSTEM INFORMATION',
+          knowledge: 'Information Technology - Web Development Track',
+          aditionalInfo: 'GPA: 3.23',
+          startDate: 'February 2012',
+          endDate: 'December 2016'
+        }
+      ],
+      workflow: [
+        {
+          technology: 'Mobile-First, Responsive Design'
+        },
+        {
+          technology: 'Cross Browser Testing - Debugging'
+        },
+        {
+          technology: 'Cross Functional Teams'
+        },
+        {
+          technology: `Agile Development - Scrum`
         }
       ]
     }
@@ -322,7 +311,7 @@ export default {
         target: '#sideNav'
       })
     })
-  }  
+  }
 }
 </script>
 
