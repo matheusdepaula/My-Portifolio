@@ -133,37 +133,40 @@
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
           <ul class="list-inline list-icons">
             <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
+              <i class="devicons devicons-android"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-css3"></i>
+              <i class="devicons devicons-apple"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-git"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-github"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-nodejs"></i>
             </li>
             <li class="list-inline-item">
               <i class="devicons devicons-javascript"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicons devicons-jquery"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-sass"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-less"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-wordpress"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-grunt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-gulp"></i>
-            </li>
-            <li class="list-inline-item">
               <i class="devicons devicons-npm"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-swift"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-react"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-visualstudio"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-intellij"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-trello"></i>
             </li>
           </ul>
 
@@ -181,8 +184,9 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
           <h2 class="mb-5">Interests</h2>
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+            <div class="resume-item d-flex flex-column flex-md-row mb-3" v-for="item in interests" :key="item.description">
+              <p>{{ item.detail }}</p>
+            </div>
         </div>
       </section>
 
@@ -236,52 +240,83 @@ export default {
       technologies: 'iOS - Android - React Native',
       info: 'Brasília/DF · (61) 98222-5211 ·',
       email: 'matheusdepaula.bsb@gmail.com',
-      aboutMe: 'Formado em Sistemas de Informação na Universidade Católica de Brasília e Pós graduando em Dispositivos Móveis pelo IESB (Instituto de Educação Superior de Brasília). Possuo ampla experiência como desenvolvedor Mobile, utilizando principalmente as linguagens Objective-C e Swift para desenvolvimento nativo iOS, Kotlin e Java para desenvolvimento Android e JavaScript para desenvolvimento híbrido, em ambas plataformas. Busco sempre me aperfeiçoar e posso, com certeza, dizer que tecnologia é minha paixão!',
+      aboutMe: 'Bachelor in Information Technology from the Catholic University. Mobile Developer with 3 years of Swift, Objective-C, Java, Kotlin and JavaScript experience.',
       experience: [
         {
-          position: 'Senior Mobile Developer',
+          position: 'Mobile Developer',
           company: 'Stefanini Solutions',
-          description: 'Atuação no desenvolvimento do aplicativo BB 3.0.',
-          startDate: 'May 2018',
+          description: 'Performance in the development of the new app of \'Banco do Brasil\', the second largest banking institution in the country. Working with React-Native, Objective and Java technologies.',
+          startDate: 'May 2017',
           endDate: 'Atual'
         },
         {
           position: 'iOS Developer',
           company: 'Cast Group',
-          description: 'Atuação no projeto Ourocard.',
+          description: 'Work on the Ourocard project, \'Banco do Brasil\' credit card manager, working on the iOS platform, using native languages, Objective-C and Swift.',
           startDate: 'April 2017',
           endDate: 'May 2018'
         },
         {
           position: 'iOS Developer',
           company: 'Apple Academy',
-          description: 'Brazilian Education Program for iOS Developers.',
+          description: 'Designed and sponsored by Apple Inc, in partnership with Universidade Católica de Brasília, in which iOS projects were developed',
           startDate: 'February 2016',
           endDate: 'April 2017'
         }
       ],
       education: [
         {
-          institute: 'CATHOLIC UNIVERSITY OF BRASILIA',
+          institute: 'UNIVERSIDADE CATÓLICA DE BRASÍLIA - UCB',
           degree: 'BACHELOR OF SYSTEM INFORMATION',
-          knowledge: 'Information Technology - Web Development Track',
-          aditionalInfo: 'GPA: 3.23',
+          knowledge: 'Information Technology - Web Development, Java',
+          aditionalInfo: '',
           startDate: 'February 2012',
           endDate: 'December 2016'
+        },
+        {
+          institute: 'INSTITUTO DE EDUCAÇÃO SUPERIOR DE BRASÍLIA - IESB',
+          degree: 'GRADUATE DEGREE IN MOBILE DEVELOPMENT',
+          knowledge: 'Mobile Development: Android, iOS, React-Native, AWS, Adobe Illustrator',
+          aditionalInfo: '',
+          startDate: 'March 2018',
+          endDate: 'December 2019'
         }
       ],
       workflow: [
         {
-          technology: 'Mobile-First, Responsive Design'
+          technology: 'Agile Development'
         },
         {
-          technology: 'Cross Browser Testing - Debugging'
+          technology: 'Git'
         },
         {
-          technology: 'Cross Functional Teams'
+          technology: 'JavaScript'
         },
         {
-          technology: `Agile Development - Scrum`
+          technology: 'Swift'
+        },
+        {
+          technology: 'Objective-C'
+        },
+        {
+          technology: 'Kotlin'
+        },
+        {
+          technology: 'Java'
+        },
+        {
+          technology: 'Design Patterns'
+        }
+      ],
+      interests: [
+        {
+          detail: 'Besides the passion for technology, I also enjoy my free time playing sports, being close to my family and friends and learning new things.'
+        },
+        {
+          detail: 'I spend a lot of my time also learning about new technologies, trends and innovations that are running around the world. I really enjoy watching Ted Talks and reading articles on sites like Medium.'
+        },
+        {
+          detail: 'I also have to say that I\'m passionate about traveling and I\'m hoping to travel to various countries around the world.'
         }
       ]
     }
