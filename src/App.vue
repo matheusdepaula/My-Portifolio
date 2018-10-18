@@ -13,19 +13,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+            <a class="nav-link js-scroll-trigger" href="#experience">Experiência</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+            <a class="nav-link js-scroll-trigger" href="#education">Educação</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+            <a class="nav-link js-scroll-trigger" href="#interests">Interesses</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
@@ -88,7 +88,7 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
+          <h2 class="mb-5">Experiência</h2>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5" v-for="job in experience" :key="job.description">
             <div class="resume-content mr-auto">
@@ -107,7 +107,7 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
+          <h2 class="mb-5">Educação</h2>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5" v-for="educationInfo in education" :key="educationInfo.description">
             <div class="resume-content mr-auto">
@@ -130,7 +130,7 @@
         <div class="my-auto">
           <h2 class="mb-5">Skills</h2>
 
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <div class="subheading mb-3">Linguagens de Programação &amp; Ferramentas</div>
           <ul class="list-inline list-icons">
             <li class="list-inline-item">
               <i class="devicons devicons-android"></i>
@@ -183,7 +183,7 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
+          <h2 class="mb-5">Interesses</h2>
             <div class="resume-item d-flex flex-column flex-md-row mb-3" v-for="item in interests" :key="item.description">
               <p>{{ item.detail }}</p>
             </div>
@@ -234,32 +234,32 @@ export default {
   data () {
     return {
       title: 'My portfolio',
-      welcome: 'Hi there, I`M',
+      welcome: 'Olá, Eu sou o',
       name: 'MATHEUS',
       surname: 'DE PAULA',
       technologies: 'iOS - Android - React Native',
       info: 'Brasília/DF · (61) 98222-5211 ·',
       email: 'matheusdepaula.bsb@gmail.com',
-      aboutMe: 'Bachelor in Information Technology from the Catholic University. Mobile Developer with 3 years of Swift, Objective-C, Java, Kotlin and JavaScript experience.',
+      aboutMe: 'Formado em Sistemas de Informação na Universidade Católica de Brasília e Pós graduando em Dispositivos Móveis pelo IESB (Instituto de Educação Superior de Brasília). Possuo ampla experiência como desenvolvedor Mobile, utilizando principalmente as linguagens Objective-C e Swift para desenvolvimento nativo iOS, Kotlin e Java para desenvolvimento Android e JavaScript para desenvolvimento híbrido, em ambas plataformas. Busco sempre me aperfeiçoar e posso, com certeza, dizer que tecnologia é minha paixão!',
       experience: [
         {
-          position: 'Mobile Developer',
+          position: 'Desenvolvedor Mobile',
           company: 'Stefanini Solutions',
-          description: 'Performance in the development of the new app of \'Banco do Brasil\', the second largest banking institution in the country. Working with React-Native, Objective and Java technologies.',
-          startDate: 'May 2017',
+          description: 'Desenvolvimento Mobile, utilizando, predominantemente, as linguagens Objective-C, Java Script (React Native) e Java (Android). Atuação em projetos do Banco do Brasil, trabalhando diariamente junto ao cliente citado.',
+          startDate: 'Maio de 2017',
           endDate: 'Atual'
         },
         {
-          position: 'iOS Developer',
+          position: 'Desenvolvedor iOS',
           company: 'Cast Group',
-          description: 'Work on the Ourocard project, \'Banco do Brasil\' credit card manager, working on the iOS platform, using native languages, Objective-C and Swift.',
-          startDate: 'April 2017',
-          endDate: 'May 2018'
+          description: 'Atuação no projeto Ourocard, gerenciador de cartões do Banco do Brasil, trabalhando na plataforma iOS, utilizando a linguagens nativas, Objective-C e Swift.',
+          startDate: 'Abril de 2017',
+          endDate: 'Maio de 2018'
         },
         {
-          position: 'iOS Developer',
+          position: 'Desenvolvedor iOS',
           company: 'Apple Academy',
-          description: 'Designed and sponsored by Apple Inc, in partnership with Universidade Católica de Brasília, in which iOS projects were developed',
+          description: 'Desenvolvimento de aplicações iOS utilizando as linguagens Swift e Objective-C.',
           startDate: 'February 2016',
           endDate: 'April 2017'
         }
@@ -267,19 +267,19 @@ export default {
       education: [
         {
           institute: 'UNIVERSIDADE CATÓLICA DE BRASÍLIA - UCB',
-          degree: 'BACHELOR OF SYSTEM INFORMATION',
-          knowledge: 'Information Technology - Web Development, Java',
+          degree: 'BACHAREL EM SISTEMAS DE INFORMAÇÃO',
+          knowledge: 'Tecnologia da Informação - Desenvolvedor Web, Java',
           aditionalInfo: '',
-          startDate: 'February 2012',
-          endDate: 'December 2016'
+          startDate: 'Fevereiro de 2012',
+          endDate: 'Dezembro de 2016'
         },
         {
           institute: 'INSTITUTO DE EDUCAÇÃO SUPERIOR DE BRASÍLIA - IESB',
-          degree: 'GRADUATE DEGREE IN MOBILE DEVELOPMENT',
-          knowledge: 'Mobile Development: Android, iOS, React-Native, AWS, Adobe Illustrator',
+          degree: 'PÓS GRADUAÇÃO EM DESENVOLVIMENTO MOBILE',
+          knowledge: 'Desenvolvimento Mobile: Android, iOS, React-Native, AWS, Adobe Illustrator',
           aditionalInfo: '',
-          startDate: 'March 2018',
-          endDate: 'December 2019'
+          startDate: 'Março de 2018',
+          endDate: 'Dezembro de 2019'
         }
       ],
       workflow: [
@@ -310,13 +310,13 @@ export default {
       ],
       interests: [
         {
-          detail: 'Besides the passion for technology, I also enjoy my free time playing sports, being close to my family and friends and learning new things.'
+          detail: 'Além da paixão pela tecnologia, também aproveito o meu tempo livre praticando esportes, estando perto da minha família e amigos e também aprendendo coisas novas.'
         },
         {
-          detail: 'I spend a lot of my time also learning about new technologies, trends and innovations that are running around the world. I really enjoy watching Ted Talks and reading articles on sites like Medium.'
+          detail: 'Eu invisto muito do meu tempo também aprendendo sobre novas tecnologias, tendências e inovações que estão acontecendo ao redor do mundo. Gosto muito de assistir Ted Talks e ler artigos em sites como o Medium.'
         },
         {
-          detail: 'I also have to say that I\'m passionate about traveling and I\'m hoping to travel to various countries around the world.'
+          detail: 'Sou também apaixonado por viagens e espero ter a oportunidade de viajar para vários países ao redor do mundo.'
         }
       ]
     }
