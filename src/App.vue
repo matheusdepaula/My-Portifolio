@@ -240,12 +240,12 @@ export default {
       technologies: 'iOS - Android - React Native',
       info: 'Brasília/DF · (61) 98222-5211 ·',
       email: 'matheusdepaula.bsb@gmail.com',
-      aboutMe: 'Bachelor in Information Technology from the Catholic University. Mobile Developer with 3 years of Swift, Objective-C, Java, Kotlin and JavaScript experience.',
+      aboutMe: 'Bachelor in Information Technology from the Universidade Católica de Brasília. Mobile Developer with 3 years of Swift, Objective-C, Java, Kotlin and JavaScript experience.',
       experience: [
         {
           position: 'Mobile Developer',
           company: 'Stefanini Solutions',
-          description: 'Performance in the development of the new app of \'Banco do Brasil\', the second largest banking institution in the country. Working with React-Native, Objective and Java technologies.',
+          description: 'Performance in the development of the new mobile app of \'Banco do Brasil\', the second largest banking institution in the country. Working with React-Native, Objective and Java technologies.',
           startDate: 'May 2017',
           endDate: 'Atual'
         },
